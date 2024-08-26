@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/img/logo.svg" class="logo" alt="logo" />
+      <div class="col input-view">
+        <div class="content">
+          <textarea
+            class="input"
+            id="input"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="btn-container">
+            <p class="message-text">
+              <img src="./assets/img/icon.svg" alt="info" />
+              <span>Solo letras minusculas y acentos</span>
+            </p>
+            <div class="buttons">
+              <button id="encriptar" class="btn btn-primary">Encriptar</button>
+              <button id="desencriptar" class="btn btn-secondary">Desencriptar</button>
+              <button id="limpiar" class="btn btn-secondary">Limpiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col output-view">
+        <div class="output-empty">
+          <img src="./assets/img/person.svg" alt="empty" />
+          <h5 class="title">Ningún mensaje fue encontrado</h5>
+          <p class="description">
+            Ingrese el texto que desea encriptar o desencriptar
+          </p>
+        </div>
+        <div class="output-text">
+          <p class="output" id="output">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+          <div class="btn-container">
+            <button class="btn btn-secondary" id="copiar">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
